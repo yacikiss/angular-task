@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { UserService } from '../services/UserService';
+import { UserService } from '../services/user.service';
 
-import { User } from '../entities/User';
+import { User } from '../entities/user';
 
 @Component({
     templateUrl: './user-view.component.html',

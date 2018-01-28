@@ -1,9 +1,10 @@
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+
 import 'rxjs/add/operator/map';
 
-import { User } from '../entities/User';
+import { User } from '../entities/user';
 
 @Injectable()
 export class UserService {
