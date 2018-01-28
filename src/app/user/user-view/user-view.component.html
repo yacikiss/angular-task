@@ -1,0 +1,15 @@
+<div *ngIf="loading">
+        Loading...
+</div>
+
+<div class="user" *ngIf="!loading">
+    <div class="picture">
+        <img [src]="user.picture">
+    </div>
+    <div class="info">
+        <div class="name" (click)="onClickName(user.name)"> {{ user.name }}</div>
+        <input [value]="user.email" readonly/>
+        <input [value]="user.phone" readonly/>
+        <input [value]="user.dob" readonly/>
+    </div>
+</div>

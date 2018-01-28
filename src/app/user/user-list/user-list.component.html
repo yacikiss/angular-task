@@ -1,0 +1,17 @@
+<div *ngIf="loading">
+    Loading...
+</div>
+
+<div *ngFor="let user of users" class="user" [class.edit]="!user.readonly">
+    <div class="picture">
+        <img [src]="user.picture">
+    </div>
+    <div class="info">
+        <div  class="name" (click)="onClickName(user.name)"> {{ user.name }}</div>
+        <input [value]="user.email" [readonly]="user.readonly"/>
+        <input [value]="user.phone" [readonly]="user.readonly"/>
+        <input [value]="user.dob" [readonly]="user.readonly"/>
+        <button (click)="onClickEdit(user)">Edit</button>
+        <button (click)="onClickRemove(user)">Remove</button>
+    </div>
+</div>

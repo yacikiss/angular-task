@@ -1,0 +1,26 @@
+.user {
+    width: 300px;
+    display: inline-block;
+}
+
+.picture {
+    display: inline-block;
+}
+
+.info {
+    display: inline-block;
+    vertical-align: top;
+}
+.info > input {
+    display: block;
+    width: 150px;
+    padding-top: 5px; 
+}
+
+.edit input {
+    background-color: lightblue;
+}
+
+.name {
+    cursor: pointer;
+}
